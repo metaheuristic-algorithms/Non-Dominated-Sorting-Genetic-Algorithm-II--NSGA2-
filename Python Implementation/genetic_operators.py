@@ -61,7 +61,7 @@ def genetic_operators(p1_pos, p2_pos, var_min, var_max, pc, eta_c, pm, eta_m):
     # Polynomial Mutation
     for child in [c1, c2]:
         for j in range(n_var):
-            if random.random() <= pm:
+            if random.random() <= pm: 
                 u = random.random()
                 if u < 0.5:
                     delta = (2 * u)**(1 / (eta_m + 1)) - 1
